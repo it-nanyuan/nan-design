@@ -1,0 +1,26 @@
+.nd-pagination {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nd-pagination__pages {
+  display: inline-flex;
+  gap: 8px;
+}
+
+.nd-pagination__page {
+  min-width: 34px;
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid var(--nd-colorBorder);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+
+.nd-pagination__page--active {
+  border-color: var(--nd-colorPrimary);
+  background: rgba(15, 98, 254, 0.12);
+  color: var(--nd-colorPrimaryActive);
+}

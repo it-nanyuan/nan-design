@@ -1,0 +1,36 @@
+.nd-switch {
+  position: relative;
+  width: 48px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: #c7cfdb;
+  cursor: pointer;
+  transition: all var(--nd-motionDurationMid) var(--nd-motionEaseInOut);
+}
+
+.nd-switch--checked {
+  background: var(--nd-colorPrimary);
+}
+
+.nd-switch--disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.nd-switch__handle {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.2);
+  transition: transform var(--nd-motionDurationMid) var(--nd-motionEaseInOut);
+}
+
+.nd-switch--checked .nd-switch__handle {
+  transform: translateX(20px);
+}

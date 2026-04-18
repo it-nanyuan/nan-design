@@ -1,0 +1,31 @@
+.nd-breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: var(--nd-colorTextSecondary);
+  font-size: 14px;
+}
+
+.nd-breadcrumb__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nd-breadcrumb__button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+}
+
+.nd-breadcrumb__separator {
+  opacity: 0.7;
+}
+
+.nd-breadcrumb__current {
+  color: var(--nd-colorText);
+}

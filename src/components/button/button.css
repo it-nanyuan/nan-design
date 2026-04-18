@@ -1,0 +1,112 @@
+.nd-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 88px;
+  height: var(--nd-controlHeight);
+  padding: 0 18px;
+  border: 1px solid var(--nd-colorBorder);
+  border-radius: var(--nd-borderRadiusSM);
+  background: var(--nd-colorBgContainer);
+  color: var(--nd-colorText);
+  cursor: pointer;
+  transition:
+    all var(--nd-motionDurationMid) var(--nd-motionEaseInOut),
+    transform var(--nd-motionDurationFast) var(--nd-motionEaseInOut);
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+}
+
+.nd-btn:hover:not(:disabled) {
+  color: var(--nd-colorPrimary);
+  border-color: var(--nd-colorPrimaryHover);
+  transform: translateY(-1px);
+}
+
+.nd-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.nd-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.nd-btn--block {
+  width: 100%;
+}
+
+.nd-btn--small {
+  min-width: 72px;
+  height: var(--nd-controlHeightSM);
+  padding: 0 14px;
+}
+
+.nd-btn--large {
+  min-width: 104px;
+  height: var(--nd-controlHeightLG);
+  padding: 0 22px;
+}
+
+.nd-btn--primary {
+  border-color: var(--nd-colorPrimary);
+  background: linear-gradient(135deg, var(--nd-colorPrimaryHover), var(--nd-colorPrimary));
+  color: var(--nd-colorTextLightSolid);
+  box-shadow: var(--nd-boxShadowSecondary);
+}
+
+.nd-btn--primary:hover:not(:disabled) {
+  color: var(--nd-colorTextLightSolid);
+  border-color: var(--nd-colorPrimaryHover);
+  background: linear-gradient(135deg, #5ca5ff, var(--nd-colorPrimaryHover));
+}
+
+.nd-btn--dashed {
+  border-style: dashed;
+  background: var(--nd-colorFillQuaternary);
+}
+
+.nd-btn--text,
+.nd-btn--link {
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+
+.nd-btn--link {
+  color: var(--nd-colorPrimary);
+}
+
+.nd-btn--danger {
+  color: var(--nd-colorError);
+  border-color: rgba(255, 77, 79, 0.24);
+}
+
+.nd-btn--danger.nd-btn--primary {
+  border-color: var(--nd-colorError);
+  background: linear-gradient(135deg, #ff7875, var(--nd-colorError));
+  color: var(--nd-colorTextLightSolid);
+}
+
+.nd-btn__icon,
+.nd-btn__spinner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nd-btn__spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 999px;
+  animation: nd-btn-spin 0.8s linear infinite;
+}
+
+@keyframes nd-btn-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

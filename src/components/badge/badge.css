@@ -1,0 +1,40 @@
+.nd-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--nd-colorTextSecondary);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.nd-badge__indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #c7cfdb;
+}
+
+.nd-badge--dot {
+  gap: 0;
+}
+
+.nd-badge--default .nd-badge__indicator {
+  background: #c7cfdb;
+}
+
+.nd-badge--processing .nd-badge__indicator {
+  background: var(--nd-colorPrimary);
+  box-shadow: 0 0 0 6px rgba(15, 98, 254, 0.14);
+}
+
+.nd-badge--success .nd-badge__indicator {
+  background: var(--nd-colorSuccess);
+}
+
+.nd-badge--warning .nd-badge__indicator {
+  background: var(--nd-colorWarning);
+}
+
+.nd-badge--error .nd-badge__indicator {
+  background: var(--nd-colorError);
+}

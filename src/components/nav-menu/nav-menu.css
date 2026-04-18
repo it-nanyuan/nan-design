@@ -1,0 +1,34 @@
+.nd-nav-menu {
+  display: grid;
+  gap: 8px;
+}
+
+.nd-nav-menu__item {
+  display: grid;
+  gap: 4px;
+  padding: 12px 14px;
+  border: 0;
+  border-radius: 14px;
+  background: transparent;
+  color: var(--nd-colorTextSecondary);
+  cursor: pointer;
+  text-align: left;
+  transition: all var(--nd-motionDurationFast) var(--nd-motionEaseInOut);
+}
+
+.nd-nav-menu__item:hover,
+.nd-nav-menu__item--active {
+  background: rgba(15, 98, 254, 0.1);
+  color: var(--nd-colorPrimaryActive);
+}
+
+.nd-nav-menu__label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nd-nav-menu__description {
+  color: inherit;
+  font-size: 12px;
+  opacity: 0.86;
+}

@@ -1,0 +1,44 @@
+.nd-card {
+  border: 1px solid var(--nd-colorBorderSecondary);
+  border-radius: var(--nd-borderRadiusLG);
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: var(--nd-boxShadow);
+  backdrop-filter: blur(14px);
+}
+
+.nd-card--hoverable {
+  transition:
+    transform var(--nd-motionDurationMid) var(--nd-motionEaseInOut),
+    box-shadow var(--nd-motionDurationMid) var(--nd-motionEaseInOut);
+}
+
+.nd-card--hoverable:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 34px rgba(17, 24, 39, 0.12);
+}
+
+.nd-card--borderless {
+  border-color: transparent;
+}
+
+.nd-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--nd-colorBorderSecondary);
+}
+
+.nd-card__title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nd-card__extra {
+  color: var(--nd-colorTextSecondary);
+}
+
+.nd-card__body {
+  padding: 20px;
+}

@@ -1,0 +1,3 @@
+:where(.nd-card, .nd-btn, .nd-input, .nd-select, .nd-tabs, .nd-table, .nd-modal, .nd-drawer) {
+  box-sizing: border-box;
+}

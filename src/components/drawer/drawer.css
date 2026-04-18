@@ -1,0 +1,61 @@
+.nd-drawer-root {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+}
+
+.nd-drawer-root--hidden {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.nd-drawer-root__mask {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.3);
+  backdrop-filter: blur(4px);
+}
+
+.nd-drawer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: -20px 0 60px rgba(15, 23, 42, 0.16);
+}
+
+.nd-drawer--right {
+  right: 0;
+}
+
+.nd-drawer--left {
+  left: 0;
+  box-shadow: 20px 0 60px rgba(15, 23, 42, 0.16);
+}
+
+.nd-drawer__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--nd-colorBorderSecondary);
+}
+
+.nd-drawer__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.nd-drawer__extra {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nd-drawer__body {
+  overflow: auto;
+  padding: 20px;
+}

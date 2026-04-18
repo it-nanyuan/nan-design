@@ -1,0 +1,57 @@
+.nd-title,
+.nd-paragraph,
+.nd-typography {
+  margin: 0;
+  color: var(--nd-colorText);
+}
+
+.nd-title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.nd-title--1 {
+  font-size: 40px;
+  line-height: 1.08;
+}
+
+.nd-title--2 {
+  font-size: var(--nd-fontSizeHeading2);
+  line-height: 1.18;
+}
+
+.nd-title--3 {
+  font-size: var(--nd-fontSizeHeading3);
+  line-height: 1.24;
+}
+
+.nd-title--4 {
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.nd-title--5 {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.nd-paragraph {
+  color: var(--nd-colorTextSecondary);
+  line-height: 1.75;
+}
+
+.nd-typography--secondary {
+  color: var(--nd-colorTextSecondary);
+}
+
+.nd-typography--success {
+  color: var(--nd-colorSuccess);
+}
+
+.nd-typography--warning {
+  color: var(--nd-colorWarning);
+}
+
+.nd-typography--danger {
+  color: var(--nd-colorError);
+}

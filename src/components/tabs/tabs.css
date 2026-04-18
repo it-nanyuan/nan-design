@@ -1,0 +1,35 @@
+.nd-tabs {
+  display: grid;
+  gap: 18px;
+}
+
+.nd-tabs__nav {
+  display: flex;
+  gap: 8px;
+  padding: 6px;
+  border-radius: 14px;
+  background: rgba(243, 246, 251, 0.92);
+  width: fit-content;
+}
+
+.nd-tabs__tab {
+  position: relative;
+  min-width: 100px;
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--nd-colorTextSecondary);
+  cursor: pointer;
+  transition: all var(--nd-motionDurationMid) var(--nd-motionEaseInOut);
+}
+
+.nd-tabs__tab--active {
+  background: var(--nd-colorBgContainer);
+  color: var(--nd-colorPrimary);
+  box-shadow: 0 8px 20px rgba(16, 24, 40, 0.08);
+}
+
+.nd-tabs__panel {
+  padding: 4px 0;
+}

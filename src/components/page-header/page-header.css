@@ -1,0 +1,33 @@
+.nd-page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.nd-page-header__content {
+  display: grid;
+  gap: 8px;
+}
+
+.nd-page-header__title,
+.nd-page-header__subtitle {
+  margin: 0;
+}
+
+.nd-page-header__title {
+  font-size: 28px;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+.nd-page-header__subtitle {
+  color: var(--nd-colorTextSecondary);
+  line-height: 1.72;
+}
+
+.nd-page-header__extra {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}

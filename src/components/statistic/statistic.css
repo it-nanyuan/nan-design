@@ -1,0 +1,33 @@
+.nd-statistic {
+  display: grid;
+  gap: 8px;
+}
+
+.nd-statistic__title,
+.nd-statistic__trend {
+  color: var(--nd-colorTextSecondary);
+}
+
+.nd-statistic__title {
+  font-size: 13px;
+}
+
+.nd-statistic__value-row {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.nd-statistic__value {
+  font-size: 34px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.nd-statistic__suffix {
+  color: var(--nd-colorTextSecondary);
+}
+
+.nd-statistic__trend {
+  font-size: 13px;
+}

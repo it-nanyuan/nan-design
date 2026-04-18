@@ -1,0 +1,52 @@
+.nd-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: #f2f4f8;
+  color: var(--nd-colorTextSecondary);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.nd-tag--borderless {
+  border-color: transparent;
+}
+
+.nd-tag--default {
+  background: #f3f5f8;
+  border-color: #e4e8f0;
+}
+
+.nd-tag--blue {
+  background: rgba(22, 119, 255, 0.12);
+  border-color: rgba(22, 119, 255, 0.18);
+  color: var(--nd-colorPrimaryActive);
+}
+
+.nd-tag--green {
+  background: rgba(82, 196, 26, 0.12);
+  border-color: rgba(82, 196, 26, 0.18);
+  color: #2b8a3e;
+}
+
+.nd-tag--gold {
+  background: rgba(250, 173, 20, 0.12);
+  border-color: rgba(250, 173, 20, 0.18);
+  color: #ad6800;
+}
+
+.nd-tag--red {
+  background: rgba(255, 77, 79, 0.12);
+  border-color: rgba(255, 77, 79, 0.18);
+  color: #cf1322;
+}
+
+.nd-tag--purple {
+  background: rgba(114, 46, 209, 0.12);
+  border-color: rgba(114, 46, 209, 0.18);
+  color: #531dab;
+}

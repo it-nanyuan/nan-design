@@ -1,0 +1,51 @@
+.nd-textarea {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--nd-colorBorder);
+  border-radius: var(--nd-borderRadiusSM);
+  background: rgba(255, 255, 255, 0.82);
+  transition: all var(--nd-motionDurationMid) var(--nd-motionEaseInOut);
+}
+
+.nd-textarea:hover {
+  border-color: var(--nd-colorPrimaryHover);
+}
+
+.nd-textarea:focus-within {
+  border-color: var(--nd-colorPrimary);
+  box-shadow: 0 0 0 4px rgba(22, 119, 255, 0.12);
+}
+
+.nd-textarea--error {
+  border-color: rgba(255, 77, 79, 0.55);
+}
+
+.nd-textarea--warning {
+  border-color: rgba(250, 173, 20, 0.55);
+}
+
+.nd-textarea--disabled {
+  background: var(--nd-colorFillTertiary);
+  opacity: 0.75;
+}
+
+.nd-textarea textarea {
+  width: 100%;
+  min-height: 96px;
+  border: 0;
+  outline: none;
+  resize: vertical;
+  background: transparent;
+  color: var(--nd-colorText);
+  font: inherit;
+}
+
+.nd-textarea textarea::placeholder {
+  color: var(--nd-colorTextSecondary);
+}
+
+.nd-textarea__affix {
+  color: var(--nd-colorTextSecondary);
+}

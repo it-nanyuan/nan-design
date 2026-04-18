@@ -1,0 +1,22 @@
+.nd-space {
+  display: inline-flex;
+}
+
+.nd-space--vertical {
+  flex-direction: column;
+  align-items: stretch !important;
+}
+
+.nd-space--wrap {
+  flex-wrap: wrap;
+}
+
+.nd-space__item {
+  display: inline-flex;
+  align-items: center;
+  gap: inherit;
+}
+
+.nd-space__split {
+  color: var(--nd-colorTextSecondary);
+}
